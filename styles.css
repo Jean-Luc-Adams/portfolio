@@ -44,6 +44,11 @@ a:hover {
     cursor: pointer;
 }
 
+/* Nav bar styling */
+.navbar {
+    color: whitesmoke;
+}
+
 
 /* The introduction section */
 
