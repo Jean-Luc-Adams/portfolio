@@ -25,6 +25,12 @@ h1 {
     padding-top: 8rem;
     font-weight: 700;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+
+    animation: moveInLeft 3s;
+}
+
+.title {
+    animation: moveInRight 3s;
 }
 
 
@@ -129,6 +135,32 @@ h5 {
     }
 }
 
+/* Keyframe Animation properties */
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 /* Media queriers for tablets like iPads, etc. */
 
 @media screen and (min-width: 361px) and (max-width: 906px) {
@@ -157,3 +189,4 @@ h5 {
         width: 50%
     }
 }
+
